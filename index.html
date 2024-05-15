@@ -5,29 +5,382 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarmar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome 6.2.0 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
+    <link rel="stylesheet" href="./css/flaticon/flaticon.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
     <header>
-
+        <div class="container">
+            <div class="header_content">
+                <a href="#">
+                    <img src="./img/logo-2.png" alt="logo-2">
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>home</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>pages</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>services</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>post layout</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>blog</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>contact us</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="button"> Get A Quote</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel_content">
+                <div class="carousel_left">
+                    <div class="title">
+                        <p>We are The Best</p>
+                        <h2>Freelance Product Designer Running</h2>
+
+                    </div>
+                    <div class="carousel_article">
+                        <p>We develop the relationships that underpin the next phase in your <br>
+                            organisation’s growth.</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Master's degree in designing
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Outstanding mobile design
+                            </li>
+                        </ul>
+                        <button class="button">GET STARTED</button>
+                    </div>
+                </div>
+                <div class="carousel_right">
+                    <div class="carousel_banner">
+                        <img src="./img/pic3_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <div class="service_title">
+                <p>What We Do Best</p>
+                <h2>Our Digital Services</h2>
+            </div>
+            <div class="service_content">
+                <div class="service_item">
+                    <img src="./img/pic1_3.jpg" alt="">
+                    <h3>Web Development</h3>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna
+                        quis.</p>
+                </div>
+                <div class="service_item">
+                    <img src="./img/pic2_2.jpg" alt="">
+                    <h3>Strategy & Research</h3>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna
+                        quis.</p>
+                </div>
+                <div class="service_item">
+                    <img src="./img/pic3_2.jpg" alt="">
+                    <h3>Growth Tracking</h3>
+                    <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna
+                        quis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about_content">
+                <div class="about_left">
+                    <img src="./img/pic1.jpg" alt="">
+                </div>
+                <div class="about_right">
+                    <div class="about_title">
+                        <p>About Us</p>
+                        <h2> Build Your <br> Business Website </h2>
+                    </div>
+                    <p>Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus
+                        blandit, dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed
+                        euismod turpis id nibh suscipit semper. Pellentesque dapibus risus arcu.</p>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            We support programs that create advancement opportunities for people.
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Get a view of events and trends. Be updated on our recent news.
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Finally, it all comes down to people. Creating a winning team.
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Get a view of events and trends. Be updated on our recent news.
+                        </li>
+                    </ul>
+                    <button class="button">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="number">
+        <div class="container">
+            <div class="number_content">
+                <div class="number_item">
+                    <i class="flaticon-smile"></i>
+                    <p><span class="counter">18</span>Ml
+                    </p>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div class="number_item">
+                    <i class="flaticon-line-chart"></i>
+                    <p><span class="counter">20</span>Ml
+                    </p>
+                    <p>Project Completed</p>
+                </div>
+                <div class="number_item">
+                    <i class="flaticon-startup"></i>
+                    <p><span class="counter">30</span>Ml
+                    </p>
+                    <p>Project Lunched</p>
+                </div>
+                <div class="number_item">
+                    <i class="flaticon-confetti"></i>
+                    <p><span class="counter">50</span>Ml
+                    </p>
+                    <p>Years Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="features_content">
+                <div class="features_left">
+                    <div class="features_title">
+                        <p>Our Features</p>
+                        <h2>Behind The Story  <br>  Of Samar Agency</h2>
+                    </div>
+                    <div class="features_content_left">
+                        <div class="features_item">
+                            <div class="features_bg">
+                                <i class="flaticon-idea"></i>
+                                <div>
+                                    <h3>Idea & Analysis Gathering</h3>
+                                    <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet
+                                        consequat augue.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_item">
+                            <div class="features_bg">
+                                <i class="flaticon-coding"></i>
+                                <div>
+                                    <h3>Design & Developing</h3>
+                                    <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet
+                                        consequat augue.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_item">
+                            <div class="features_bg">
+                                <i class="flaticon-rocket"></i>
+                                <div>
+                                    <h3>Testing & Lunching</h3>
+                                    <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet
+                                        consequat augue.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features_right">
+                    <div class="features_banner">
+                        <img src="./img/pic3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="postfolio">
+        <div class="container">
+            <div class="postfolio_title">
+                <p>Portfolio</p>
+                <h2>Our Latest Work</h2>
+            </div>
+            <div class="postfolio_content">
+                <div class="postfolio_item">
+                    <img src="./img/pic1_2.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_icon">
+                            <a href="./img/pic1_2.jpg" data-fancybox="gallery" data-caption="Design 1">
+
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="overlay_text">
+                            <h3>Software Landing</h3>
+                            <p>By Jhone Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="postfolio_item">
+                    <img src="./img/pic2_1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_icon">
+                            <a href="./img/pic2_1.jpg" data-fancybox="gallery" data-caption="Design 2">
+
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="overlay_text">
+                            <h3>Software Landing</h3>
+                            <p>By Jhone Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="postfolio_item">
+                    <img src="./img/pic3_1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_icon">
+                            <a href="./img/pic3_1.jpg" data-fancybox="gallery" data-caption="Design 3">
+
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="overlay_text">
+                            <h3>Software Landing</h3>
+                            <p>By Jhone Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="postfolio_item">
+                    <img src="./img/pic4.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_icon">
+                            <a href="./img/pic4.jpg" data-fancybox="gallery" data-caption="Design 4">
+
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="overlay_text">
+                            <h3>Software Landing</h3>
+                            <p>By Jhone Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="postfolio_item">
+                    <img src="./img/pic5.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_icon">
+                            <a href="./img/pic5.jpg" data-fancybox="gallery" data-caption="Design 5">
+
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="overlay_text">
+                            <h3>Software Landing</h3>
+                            <p>By Jhone Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="postfolio_item">
+                    <img src="./img/pic6.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_icon">
+                            <a href="./img/pic6.jpg" data-fancybox="gallery" data-caption="Design 6">
+
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="overlay_text">
+                            <h3>Software Landing</h3>
+                            <p>By Jhone Doe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer></footer>
+    <!-- fancy box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+
+    </script>
+    <!-- count up js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/countUp/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp({
+            'time': 2000,
+            'delay': 10
+        });
+    </script>
+    <!-- back to top -->
+    <script src="./js/backToTop/main.js"></script>
+    <script src="./js/backToTop/util.js"></script>
+    <script src="./js/send.js"></script>
 </body>
 
 </html>
-<a href=""></a>
-

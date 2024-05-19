@@ -690,20 +690,180 @@ header {
     color: #f55f8d;
 }
 
+/* footer  */
+footer {
+    margin-top: 40px;
+    background: #0e1b1f url(./../img/bg4.png) no-repeat center / contain;
+    font-size: 15px;
+    position: relative;
+    height: auto;
+}
+
+footer::before {
+    content: "";
+    background: url(../img/pattern2.png) no-repeat left top / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_top {
+    padding: 50px 60px;
+    background: #fff url(./../img/pattern3.png) no-repeat bottom;
+    background-size: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer_top .footer_title {
+    width: 50%;
+}
+
+.footer_top .footer_title h2 {
+    font-size: 28px;
+    color: #262626;
+}
+
+.footer_top .footer_input {
+    width: 50%;
+}
+
+.footer_input form {
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 60px 0 rgb(0, 0, 0, 0.1);
+}
+.footer_input input {
+    padding: 20px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    background: #fff;
+    flex: 1 1 auto;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: 1px solid #fff;
+    outline: none;
+    transition: all .5s;
+}
+
+.footer_input input:hover {
+    border-color: #f55f8d;
+}
 
 
+.footer_top .footer_input button {
+    padding: 20px 35px;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    border-color: transparent;
+    transition: all 0.5s;
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: white;
+    cursor: pointer;
+}
+
+.footer_top .footer_input button:hover {
+    background-position: right center;
+}
+
+.footer_top .footer_input button:hover i {
+    animation: leftright 0.5s infinite;
+}
 
 
+.footer_bottom {
+    display: flex;
+    padding: 70px 0;
+    position: relative;
+}
+
+.footer_bottom .footer_item {
+    width: 25%;
+}
+
+.footer_bottom .footer_item a {
+    color: #636363;
+    font-size: 16px;
+    transition: all .5s;
+}
+
+.footer_bottom .footer_item i {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.footer_bottom .footer_item .contact li {
+    display: flex;
+    align-items: center;
+}
+
+.footer_bottom .footer_item .contact i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    display: block;
+    border-radius: 50px;
+    color: white;
+}
+
+.footer_bottom .footer_item .contact span {
+    font-size: 15px;
+    color: white;
+}
 
 
+.footer_bottom .footer_item li {
+    list-style: none;
+    padding: 8px 0;
+}
 
+.footer_bottom .footer_item li a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+}
 
+.footer_bottom .footer_item li a:hover {
+    color: white;
+}
 
+.footer_bottom .footer_item h3 {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
 
+.footer_bottom .footer_item h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 15px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%) 200%;
+}
 
-
-
-
+.footer_bottom .footer_item h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 4px;
+    width: 45px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%) 200%;
+}
 
 
 
@@ -720,15 +880,16 @@ header {
 .back-to-top {
     position: fixed;
     bottom: 30px;
-    right: 30px;
-    background-color: pink;
-    color: red;
+    right: 17px;
+    background-color: #f55f8d;
+    color: white;
     border-radius: 5px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     opacity: 0;
+    
 }
 
 .cd-top--is-visible { 
@@ -765,5 +926,15 @@ header {
     }
     100% {
         transform: rotate(1deg) translate(2px, 2px);
+    }
+}
+
+@keyframes leftright {
+    from {
+        transform: translateX(-100%);
+        opacity: 1;
+    } to {
+        transform: translateX(100%);
+        opacity: 0.5;
     }
 }
